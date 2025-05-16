@@ -8,8 +8,10 @@ class Solution:
             if prices[l] < prices[r]:
                 prof = prices[r] - prices[l]
                 maxP = max(maxP, prof)
+              
             else:
                 l = r
             r += 1
         return maxP
+       
     # this was very interesting
